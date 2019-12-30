@@ -1,0 +1,32 @@
+createdAt: "2019-12-30T12:42:44.601Z"
+updatedAt: "2019-12-30T12:42:46.499Z"
+type: "MARKDOWN_NOTE"
+folder: "91a7972bb0594c2bcd10"
+title: "Redis"
+tags: []
+content: '''
+  ## Redis
+  
+  #### how to run with docker
+  
+  Run the server
+  `docker run -d --name redis_server redis`
+  Enter CLI
+  `docker exec -it redis_server "redis-cli"`
+  
+  #### CLI
+  `GET key value`
+  `SET key`
+  `INCR key` - increment by 1
+  `FLUSHALL` - flush all memory
+  `EXPIRE key time_in_sec`
+  `TTL key` - time to live/expire
+  `SETEX key time value`
+  `MSET key1 value1 key2 value2`
+  `APPEND key value` - append to string value
+  `RENAME key newkey`
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,33 @@
+createdAt: "2019-12-30T12:42:37.255Z"
+updatedAt: "2019-12-30T12:42:39.348Z"
+type: "MARKDOWN_NOTE"
+folder: "91a7972bb0594c2bcd10"
+title: "Docker"
+tags: []
+content: '''
+  ## Docker
+  
+  #### CLI
+  ```bash
+  docker exec -it container_name bin/bash
+  ```
+  
+  #### Docker Compose
+  
+  ```yml
+  version: '3.1'
+  
+  services:
+    db: # service name
+      image: mysql # 'build' can be used instead to build from Dockerfile
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: admin
+      ports:
+        - 3306:3306
+  ```
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
